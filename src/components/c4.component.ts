@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'dynamic-component',
+  selector: 'c4-component',
   template: `
     <div class="addMargin">
-      <div><strong>Sub Sandwiches!</strong></div>
+      <div><strong>C4 Works!</strong></div>
       <div>This sub component was loaded dynamically... along with its corresponding CSS styles</div>
-    </div>
-  `
+    </div>`
 })
-export default class DynamicComponent {}
+export default class C4Component {}
