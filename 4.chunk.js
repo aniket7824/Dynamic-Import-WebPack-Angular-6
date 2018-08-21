@@ -14,7 +14,7 @@ var C4Component = /** @class */ (function () {
     C4Component = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
             selector: 'c4-component',
-            template: "\n    <div class=\"addMargin\">\n      <div><strong>C4 Works!</strong></div>\n      <div>This sub component was loaded dynamically... </div>\n      <a [routerLink]='[\"/c2\"]'><button class=\"btn btn-success pull-right\" > Go to C2 from C4</button></a>\n    </div>"
+            template: "\n    <div class=\"addMargin\">\n      <div><strong>C4 Works!</strong></div>\n      <div>This sub component was loaded dynamically... </div>\n      <a [routerLink]='[\"/c2\"]'><button class=\"btn btn-info\" > Go to C2 from C4</button></a>\n    </div>"
         })
     ], C4Component);
     return C4Component;

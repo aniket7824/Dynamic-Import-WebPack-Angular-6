@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <div class="addMargin">
       <div><strong>C5 Works!</strong></div>
       <div>This sub component was loaded dynamically...</div> <br>
-      <button class="btn btn-info c3one" [routerLink]="['/c3']">Go to C3</button>
+      <a [routerLink]='["/c3"]'><button class="btn btn-info" > Go to C3</button></a>
     </div>
   `
 })

@@ -44,7 +44,7 @@ var C3Component = /** @class */ (function () {
     C3Component = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
             selector: 'c3-component',
-            template: "\n    <div class=\"addMargin\">\n      <div><strong>C3 Works!</strong></div>\n      <div>This sub component was loaded dynamically...</div>\n      <button class=\"btn btn-info c3one\" [routerLink]=\"['/c5']\">Go to C5 from C3</button>\n    </div>"
+            template: "\n    <div class=\"addMargin\">\n      <div><strong>C3 Works!</strong></div>\n      <div>This sub component was loaded dynamically...</div>\n      <a [routerLink]='[\"/c1/c5\"]'><button class=\"btn btn-success pull-right\" > Go to C5 from c3 </button></a>\n    </div>"
         })
     ], C3Component);
     return C3Component;

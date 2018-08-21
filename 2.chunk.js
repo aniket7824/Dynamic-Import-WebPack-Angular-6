@@ -69,15 +69,15 @@ var c5Routes = [
     {
         path: 'c4', loadChildren: function () {
             return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 226)).then(function (mod) { return mod.default; });
-        }
+        } /**dynamic import */
     },
     {
         path: 'c5', loadChildren: function () {
             return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 228)).then(function (mod) { return mod.default; });
-        }
+        } /**dynamic import */
     },
     {
-        path: '**', component: __WEBPACK_IMPORTED_MODULE_1__c1_component__["a" /* default */]
+        path: '**', component: __WEBPACK_IMPORTED_MODULE_1__c1_component__["a" /* default */] /**static error display */
     }
 ];
 var routes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forChild(c5Routes);

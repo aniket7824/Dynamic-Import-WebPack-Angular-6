@@ -64,7 +64,7 @@ var C2Component = /** @class */ (function () {
 
 
 var c2Routes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_1__c2_component__["a" /* default */], pathMatch: 'full' }
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_1__c2_component__["a" /* default */], pathMatch: 'full' } /**nothing else to do here */
 ];
 var routes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forChild(c2Routes);
 

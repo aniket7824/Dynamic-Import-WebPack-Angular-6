@@ -14,7 +14,7 @@ var C5Component = /** @class */ (function () {
     C5Component = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
             selector: 'c5-component',
-            template: "\n    <div class=\"addMargin\">\n      <div><strong>C5 Works!</strong></div>\n      <div>This sub component was loaded dynamically...</div> <br>\n      <button class=\"btn btn-info c3one\" [routerLink]=\"['/c3']\">Go to C3</button>\n    </div>\n  "
+            template: "\n    <div class=\"addMargin\">\n      <div><strong>C5 Works!</strong></div>\n      <div>This sub component was loaded dynamically...</div> <br>\n      <a [routerLink]='[\"/c3\"]'><button class=\"btn btn-info\" > Go to C3</button></a>\n    </div>\n  "
         })
     ], C5Component);
     return C5Component;
