@@ -38324,7 +38324,8 @@ var InlineComponent = /** @class */ (function () {
     InlineComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
             selector: 'inline-component',
-            template: "\n  <div>\n    <p>Loaded on Parent Level - Default Component.</p>\n    <button class=\"btn btn-info\" [routerLink]=\"['/c1']\">Go to C1</button>\n    <button class=\"btn btn-info\" [routerLink]=\"['/c3']\">Go to C3</button>\n  </div>",
+            template: "\n  <div>\n    <p>Loaded on Parent Level - Default Component.</p>\n    <button class=\"btn btn-info\" [routerLink]=\"['/c1']\">Go to C1</button>\n    <button class=\"btn btn-info c3one\" [routerLink]=\"['/c3']\">Go to C3</button>\n  </div>",
+            styles: ['.c3one {margin-left : 24px;}'],
             providers: []
         })
     ], InlineComponent);
@@ -73240,14 +73241,6 @@ var AppModule = /** @class */ (function () {
 
 
 var appRoutes = [
-    /*  {
-        path: 'dynamic',
-        loadChildren: () => {
-          return System.import('./dynamic.module').then((comp: any) => {
-            return comp.default;
-          });
-        },
-      },  */
     { path: '', component: __WEBPACK_IMPORTED_MODULE_1__inline_component__["a" /* default */] },
     { path: 'c1', children: [
             { path: '', loadChildren: function () {

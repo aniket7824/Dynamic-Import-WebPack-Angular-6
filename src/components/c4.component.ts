@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   template: `
     <div class="addMargin">
       <div><strong>C4 Works!</strong></div>
-      <div>This sub component was loaded dynamically... along with its corresponding CSS styles</div>
+      <div>This sub component was loaded dynamically... </div>
+      <a [routerLink]='["/c2"]'><button class="btn btn-success pull-right" > Go to C2 from C4</button></a>
     </div>`
 })
 export default class C4Component {}

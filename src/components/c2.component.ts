@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
   selector: 'c2-component',
   template: `
     <div class="addMargin">
-      <div><strong>Sub Sandwiches!</strong></div>
-      <div>This sub component was loaded dynamically... along with its corresponding CSS styles</div>
+      <div><strong>C2 Works Awesome!!!</strong></div>
+      <div>This sub component was loaded dynamically... </div>
+      <div>Also this does nothing</div>
     </div>
   `
 })

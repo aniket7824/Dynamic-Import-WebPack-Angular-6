@@ -7,8 +7,8 @@ webpackJsonp([0],{
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__c3_routing_module__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__c3_component__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__c3_routing_module__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__c3_component__ = __webpack_require__(224);
 
 
 
@@ -30,7 +30,7 @@ var C3Module = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 225:
+/***/ 224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44,7 +44,7 @@ var C3Component = /** @class */ (function () {
     C3Component = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
             selector: 'c3-component',
-            template: "\n    <div class=\"addMargin\">\n      <div><strong>C3 Works!</strong></div>\n      <div>This sub component was loaded dynamically... along with its corresponding CSS styles</div>\n    </div>"
+            template: "\n    <div class=\"addMargin\">\n      <div><strong>C3 Works!</strong></div>\n      <div>This sub component was loaded dynamically...</div>\n      <button class=\"btn btn-info c3one\" [routerLink]=\"['/c5']\">Go to C5 from C3</button>\n    </div>"
         })
     ], C3Component);
     return C3Component;
@@ -54,13 +54,13 @@ var C3Component = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 230:
+/***/ 231:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routes; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__c3_component__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__c3_component__ = __webpack_require__(224);
 
 
 var c3Routes = [

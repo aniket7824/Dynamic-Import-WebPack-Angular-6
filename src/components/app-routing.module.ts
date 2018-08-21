@@ -3,17 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import InlineComponent from './inline.component';
 
 const appRoutes: Routes = [
-/*  {
-    path: 'dynamic',
-    loadChildren: () => {
-      return System.import('./dynamic.module').then((comp: any) => {
-        return comp.default;
-      });
-    }, 
-  },  */
   { path: '', component: InlineComponent}, /**default router outlet :: father of all :: MAIN in diag*/
   {path : 'c1', children : [
-    {path : '', loadChildren: () => { /** loading C1 now this will by default show */
+    {path : '', loadChildren: () => { /** loading C1 now this will have option perhaps */
       return System.import('./c1.module').then((comp: any) => {
         return comp.default;
       });

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { routes } from './c1-routing.module';
+import { routes } from './c2-routing.module';
 
 import C2Component from './c2.component';
 
