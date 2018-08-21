@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
   <div>
     <p>Loaded on Parent Level - Default Component.</p>
-    <a routerLink="/dynamic" routerLinkActive="active">Load a dynamic component</a>
+    <a routerLink="/dynamic/app" routerLinkActive="active">Load a dynamic component</a>
   </div>`
 })
 export default class InlineComponent {}

@@ -32857,7 +32857,7 @@ var InlineComponent = /** @class */ (function () {
     InlineComponent = __WEBPACK_IMPORTED_MODULE_0_tslib__["b" /* __decorate */]([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
             selector: 'inline-component',
-            template: "\n  <div>\n    <p>Loaded on Parent Level - Default Component.</p>\n    <a routerLink=\"/dynamic\" routerLinkActive=\"active\">Load a dynamic component</a>\n  </div>"
+            template: "\n  <div>\n    <p>Loaded on Parent Level - Default Component.</p>\n    <a routerLink=\"/dynamic/app\" routerLinkActive=\"active\">Load a dynamic component</a>\n  </div>"
         })
     ], InlineComponent);
     return InlineComponent;
@@ -73234,19 +73234,22 @@ var AppModule = /** @class */ (function () {
 
 
 var appRoutes = [
-    {
+    /*  {
         path: 'dynamic',
-        loadChildren: function () {
-            return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 217)).then(function (comp) {
-                return comp.default;
-            });
+        loadChildren: () => {
+          return System.import('./dynamic.module').then((comp: any) => {
+            return comp.default;
+          });
         },
-    },
-    {
-        path: '',
-        component: __WEBPACK_IMPORTED_MODULE_1__inline_component__["a" /* default */]
-    },
-    { path: '**', redirectTo: '' }
+      },  */
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_1__inline_component__["a" /* default */] },
+    { path: 'dynamic', children: [
+            { path: 'add', loadChildren: function () {
+                    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 217)).then(function (comp) {
+                        return comp.default;
+                    });
+                }, }
+        ] }
 ];
 var routes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(appRoutes);
 
